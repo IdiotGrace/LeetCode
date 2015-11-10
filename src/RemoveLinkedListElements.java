@@ -20,7 +20,19 @@
 public class RemoveLinkedListElements {
 
     public ListNode removeElements(ListNode head, int val) {
-		return head;
+    	ListNode now = new ListNode(0);
+    	now.next = head;
+    	ListNode n = now;
+    	while(n.next!=null){
+    		if(n.next.val==val){
+    			ListNode next = n.next;
+    			n.next = next.next;
+    		}else{
+    			n = n.next;
+    		}
+    		
+    	}
+		return now.next;
     }
     
     public static void main(String[] args){
