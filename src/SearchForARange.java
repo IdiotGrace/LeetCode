@@ -15,4 +15,5 @@
 public class SearchForARange {
 
 	//try git new branch and merge branch
+	今天心情很不好。不写了。
 }
